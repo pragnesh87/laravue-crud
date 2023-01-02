@@ -1,0 +1,56 @@
+$white:    #fff !default;
+$gray-50: 				#f4f7f6 !default;
+$gray-100: 				#f7f7f7 !default;
+$gray-200: 				#e2e4e7 !default;
+$gray-300: 				#bbbec2 !default;
+$gray-400: 				#96989c !default;
+$gray-500: 				#77797c !default;
+$gray-600: 				#57595d !default;
+$gray-700: 				#393d42 !default;
+$gray-800: 				#212834 !default;
+$gray-900: 				#191f28 !default;
+$black:    #000 !default;
+
+$red: 					#E15858 !default;
+$purple: 				#AA55AA !default;
+$orange: 				#FFA117 !default;
+$yellow:				#ffd861 !default;
+$green: 				#5CB65F !default;
+$blue: 					#568AD3 !default;
+$blush: 				#e25985 !default;
+$pink: 					#f66d9b !default;
+$indigo:				#9367B4 !default;
+$azura:					#007FFF !default;
+$cyan: 					#17C2D7 !default;
+$info: 					#3C89DA !default;
+$white:					#FFFFFF !default;
+$dark:			 		#17191c !default;
+$teal:    #20c997 !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$min-contrast-ratio:   1.5 !default;
+
+$border-radius:               .5rem !default;
+$border-radius-sm:            .6rem !default;
+$border-radius-lg:            .7rem !default;
+$border-radius-pill:          50rem !default;
+
+$color-variants: (
+    100:  -30%,
+    200:  -45%,
+    300:  -60%,
+    400:  -85%,
+    500:  100%,
+    600:   85%,
+    700:   60%,
+    800:   45%,
+    900:   30%
+);

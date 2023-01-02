@@ -1,0 +1,21 @@
+//  Add color variants to $colors
+@each $color-name, $color in $colors {       
+    @each $variant-name, $percent in $color-variants {
+        $mix-color: if($percent < 0%, white, black);
+        $colors: map-merge($colors, ($color-name+'-'+$variant-name: mix($color, $mix-color, abs($percent))));
+    }
+}
+
+@each $color, $value in $colors {
+  $color-rgb: to-rgb($value);
+  .bg-#{$color} {
+    color: color-contrast($value) if($enable-important-utilities, !important, null);
+    background-color: RGBA($color-rgb, var(--#{$prefix}bg-opacity, 1)) if($enable-important-utilities, !important, null);
+  }
+  .text-#{$color}{
+    color: RGBA($color-rgb, var(--#{$prefix}bg-opacity, 1)) if($enable-important-utilities, !important, null);
+  }
+  .border-#{$color}{
+    border-color: RGBA($color-rgb, var(--#{$prefix}bg-opacity, 1)) if($enable-important-utilities, !important, null);
+  }
+}
